@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: repeating-linear-gradient(
+    45deg,
+    #2ecc71 0px,
+    #2ecc71 20px,
+    #f1c40f 20px,
+    #f1c40f 40px
+  );
+}
+
+header, nav {
+  background: #111;
+  color: #fff;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 20px;
+}
+
+.post {
+  background: #1a1a1a;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.comment {
+  font-size: 13px;
+  margin-left: 10px;
+  opacity: 0.9;
+}
