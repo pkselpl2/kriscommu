@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Kris Fan Community</title>
+  <title>KRIS SHORTS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="kris.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <span id="title">Kris Fan Community</span>
+  <img src="kris.png" class="logo">
+  <h1>KRIS SHORTS</h1>
+  <button onclick="login()">Login</button>
 </header>
 
-<nav>
-  <button onclick="setBoard('general')" id="b-general">General</button>
-  <button onclick="setBoard('analysis')" id="b-analysis">Analysis</button>
-  <button onclick="setBoard('fanart')" id="b-fanart">Fan Art</button>
-</nav>
+<section id="upload" hidden>
+  <input type="file" id="img" accept="image/*">
+  <textarea id="caption" placeholder="Say something about Kris..."></textarea>
+  <button onclick="upload()">Upload</button>
+</section>
 
-<main>
-  <!-- 로그인 -->
-  <section class="login" id="loginBox">
-    <input id="loginName" placeholder="Nickname">
-    <button onclick="login()">Login</button>
-  </section>
+<main id="feed"></main>
 
-  <!-- 글쓰기 -->
-  <section class="write" id="writeBox" style="display:none">
-    <b id="userLabel"></b>
-    <textarea id="content" placeholder="Write something..."></textarea>
-    <button onclick="addPost()">Post</button>
-  </section>
-
-  <section id="posts"></section>
-</main>
-
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
+
